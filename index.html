@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting, CPA Lawyer!</title>
+    <style>
+        /* Import a fun, comforting Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #FFDDC1, #FFABAB);
+            font-family: 'Comfortaa', cursive;
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* Message box styling */
+        .message-box {
+            background-color: #fff;
+            border: 3px solid #FFABAB;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Message text styling */
+        h1 {
+            font-size: 2em;
+            color: #FF6F61;
+            margin: 0;
+        }
+
+        .subtext {
+            font-size: 1.2em;
+            color: #FF9AA2;
+            margin-top: 10px;
+        }
+
+        /* Cute heart animation */
+        .heart {
+            font-size: 2em;
+            color: #FF6F61;
+            animation: heartbeat 1s infinite;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <div class="heart">❤️</div>
+        <h1>Fighting, CPA Lawyer!</h1>
+        <div class="subtext">You got this! Keep going!</div>
+    </div>
+    <script>
+        // Optional: Additional interactivity
+        const messageBox = document.querySelector('.message-box');
+        messageBox.addEventListener('mouseover', () => {
+            messageBox.style.backgroundColor = '#FF9AA2';
+            messageBox.style.color = '#fff';
+        });
+        messageBox.addEventListener('mouseout', () => {
+            messageBox.style.backgroundColor = '#fff';
+            messageBox.style.color = '#FF6F61';
+        });
+    </script>
+</body>
+</html>
